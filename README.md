@@ -51,4 +51,18 @@ LeaseParser (Class)
     - This method is intentionally designed to be agnostic to the data source. This should work with the JSON file too allowing for easy iteration to support that additional data source
 
 
+## Future design decisons
+
+Once the data is extracted from the pdf, it would be ideal to parralelise the parsing of the lease records to make the process faster. 
+
+Parrelelism assumes each process can indepently and accurately detect the correct columnar structure. 
+To do this, we can either:
+
+1. Use the table headers on page 4 
+
+2. Build a low-latency robust caching layer to discover accurate column positions 
+
+3. Simply hard code those positions assuming the generation of these documents are automated and not subject to change.
+
+
 
