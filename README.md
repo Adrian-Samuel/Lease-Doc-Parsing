@@ -45,9 +45,10 @@ LeaseParser (Class)
 
 - (3) define_column_mapings
     - The private method that gets the positions of the columns by using the first row
-    
+
 - (4) map_row_to_columns
     - The private method that takes the positions from the define_columns_mappings and uses it to extract and plot the words along each new-line delimeted row
+    - This method is intentionally designed to be agnostic to the data source. This should work with the JSON file too allowing for easy iteration to support that additional data source
 
 
 
