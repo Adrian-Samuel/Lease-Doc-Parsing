@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "doc-parser"
+version = "0.1.0"
+description = ""
+authors = ["Adrian"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+pdfplumber = "^0.10.3"
+loguru = "^0.7.2"
+pydantic = "^2.5.3"
+fastapi = "^0.109.0"
+python-multipart = "^0.0.6"
+uvicorn = "^0.27.0.post1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
