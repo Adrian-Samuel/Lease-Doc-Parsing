@@ -38,15 +38,15 @@ This command runs isort to sort your imports alphabetically and grouped together
 # Design
 
 LeaseParser (Class)
-(1) marshal_lease_data
+- (1) marshal_lease_data
     - The public method that receives a pdf and returns a list of pydantic records
-(2) extract_lease_records
+- (2) extract_lease_records
     - The private method that extracts rows from raw pdf data 
 
-(3) define_column_mapings
+- (3) define_column_mapings
     - The private method that gets the positions of the columns by using the first row
     
-(4) map_row_to_columns
+- (4) map_row_to_columns
     - The private method that takes the positions from the define_columns_mappings and uses it to extract and plot the words along each new-line delimeted row
 
 
